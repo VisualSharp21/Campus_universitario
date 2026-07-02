@@ -52,12 +52,12 @@ int main (int argc, char *argv[]) {
     //Bloco 3 definição dos tipos de link
     //link do servidor central para o rot principal e vice versa
     PointToPointHelper p2pBackone;
-    p2pBackone.SetDeviceAttribute ("DateRate", StringValue("1Gbps"));
+    p2pBackone.SetDeviceAttribute ("DataRate", StringValue("1Gbps"));
     p2pBackone.SetChannelAttribute("Delay",StringValue("1ms"));
 
     //Link de distribuição. Rot principal para os switches e vice versa
     PointToPointHelper p2pDistruicao;
-    p2pDistruicao.SetDeviceAttribute("DateRate", StringValue("100Mbps"));
+    p2pDistruicao.SetDeviceAttribute("DataRate", StringValue("100Mbps"));
     p2pDistruicao.SetChannelAttribute("Delay", StringValue("2ms"));
 
     //link das redes LAN. Switches para PCs e vice versa
