@@ -239,14 +239,14 @@ int main(int argc, char *argv[])
     anim.SetConstantPosition (pcSecretaria.Get(1), 170.0, 90.0);
 
     // ===================================================================
-    // BLOCO 10: EXECUÇÃO DO SIMULADOR
+    // BLOCO 9: EXECUÇÃO DO SIMULADOR
     // ===================================================================
     std::cout << "\nIniciando simulacao do Campus Universitario..." << std::endl;
     Simulator::Stop(Seconds(tempoSimulacao));
     Simulator::Run();
 
     // ===================================================================
-    // BLOCO 11: IMPRESSÃO PROFISSIONAL DE RESULTADOS COM IPs
+    // BLOCO 10: IMPRESSÃO PROFISSIONAL DE RESULTADOS COM IPs
     // ===================================================================
     monitor->CheckForLostPackets(); 
     Ptr<Ipv4FlowClassifier> classifier = DynamicCast<Ipv4FlowClassifier>(flowmon.GetClassifier());
@@ -289,7 +289,7 @@ int main(int argc, char *argv[])
     std::cout << "========================================\n" << std::endl;
 
     // ===================================================================
-    // BLOCO 12: ENCERRAMENTO
+    // BLOCO 11: ENCERRAMENTO
     // ===================================================================
     Simulator::Destroy();
     return 0;
