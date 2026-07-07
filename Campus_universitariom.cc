@@ -220,6 +220,7 @@ int main(int argc, char *argv[])
     anim.UpdateNodeDescription (pcSecretaria.Get(1), "Sec-PC2");
 
     // Posições X,Y (Topologia em Árvore Alinhada)
+  
     anim.SetConstantPosition (servidor.Get(0), 95.0, 10.0);
     anim.SetConstantPosition (roteador.Get(0), 95.0, 30.0);
 
@@ -237,7 +238,6 @@ int main(int argc, char *argv[])
 
     anim.SetConstantPosition (pcSecretaria.Get(0), 150.0, 90.0);
     anim.SetConstantPosition (pcSecretaria.Get(1), 170.0, 90.0);
-
     // ===================================================================
     // BLOCO 9: EXECUÇÃO DO SIMULADOR
     // ===================================================================
